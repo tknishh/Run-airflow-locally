@@ -7,5 +7,8 @@ Follow the below steps to run Jupyter and Airflow locally using docker.
 
 Use the following link to download [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/)
 
+# Step 1 - Create a python virtual environment
+- Open Terminal (Powershell)
+`python -m venv dp`
 # Run Airflow Locally
 
