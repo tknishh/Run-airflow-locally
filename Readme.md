@@ -9,6 +9,10 @@ Use the following link to download [Docker Desktop](https://docs.docker.com/desk
 
 # Step 1 - Create a python virtual environment
 - Open Terminal (Powershell)
+
+Run the following commands
+
 `python -m venv dp`
+`dp/Scripts/activate`
 # Run Airflow Locally
 
