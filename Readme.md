@@ -19,7 +19,15 @@ Run the following commands
 
 # Step 2 - Install and initialize phidata
 
+Install   
 `pip install phidata`
+
+Initialize   
+`phi init -l`
+
+Login in phidata using google account or github as per your convinience
+
+
 
 # Run Airflow Locally
 
