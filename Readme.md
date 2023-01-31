@@ -27,6 +27,17 @@ Initialize
 
 Login in phidata using google account or github as per your convinience
 
+# step 3 - Create a Workspace
+
+Create a workspace in directory to store all the data product code.
+
+`phi ws init`
+
+Provide a name to the workspace and select the template to work on.
+
+## Running the workspace
+`phi ws up`
+
 
 
 # Run Airflow Locally
