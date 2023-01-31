@@ -15,8 +15,8 @@ ws_settings = WorkspaceSettings(
     # -*- Dev settings
     dev_env="dev",
     # -*- Dev Apps
-    dev_jupyter_enabled=True,
-    # dev_airflow_enabled=True,
+    # dev_jupyter_enabled=True,
+    dev_airflow_enabled=True,
     # dev_postgres_enabled=True,
     # dev_superset_enabled=True,
     # dev_traefik_enabled=True,

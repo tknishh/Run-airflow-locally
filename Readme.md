@@ -38,7 +38,40 @@ Provide a name to the workspace and select the template to work on.
 ## Running the workspace
 `phi ws up`
 
+# Step 5: Open the Jupyter UI
 
+Open [localhot:8888](localhost:8888) in a new tab to view the jupyterlab UI.
 
-# Run Airflow Locally
+### Password: admin
+
+Open notebooks/examples/crypto_nb.ipynb and run all cells using Run → Run All Cells
+
+This will download crypto prices and store them in a CSV Table at storage/tables/crypto_prices
+
+# Step 6: Run Airflow
+Open the workspace/settings.py file and uncomment dev_airflow_enabled=True (line 19). Start the workspace using
+
+`phi ws up`
+Press Enter to confirm. Give about 5 minutes for the containers to run and database to initialize. Check progress using: docker logs -f airflow-scheduler-container
+
+# Step 7: Open the Airflow UI
+Open localhost:8310 in a new tab to view the Airflow UI.
+
+### User: admin
+
+### Pass: admin
+
+# Step 8: Run workflow using Airflow
+Switch ON the crypto_prices DAG which contains the same task as the crypto_nb.ipynb notebook, but as a daily workflow.
+
+Checkout the workflows/crypto/prices.py file for the full code. The table is written to the storage/tables/crypto_prices directory.
+
+# Step 9: Play around
+Play around, create notebooks, DAGs and read more about phidata
+
+# Step 10: Shut down
+Stop the workspace using
+
+`phi ws down`
+
 
