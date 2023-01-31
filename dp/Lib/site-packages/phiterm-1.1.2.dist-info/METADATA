@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: phiterm
+Version: 1.1.2
+Author-email: Ashpreet Bedi <ashpreet@phidata.com>
+Project-URL: homepage, https://www.phidata.com
+Project-URL: documentation, https://www.phidata.com/docs
+Requires-Python: >3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: docker
+Requires-Dist: gitpython
+Requires-Dist: httpx
+Requires-Dist: kubernetes
+Requires-Dist: pydantic
+Requires-Dist: python-dotenv
+Requires-Dist: pyyaml
+Requires-Dist: rich
+Requires-Dist: tomli
+Requires-Dist: typer
+Requires-Dist: typing-extensions
+Provides-Extra: dev
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: types-PyYAML ; extra == 'dev'
+
+## Phiterm: The command line interface for phidata
